@@ -34,8 +34,22 @@ ul {
     align-content: center;
 }
 
-a {
+a.nav-link {
     text-decoration: none;
+    padding: 10px;
+}
+
+#nav-link-product:hover .product-dropdown{
+    display: none;
+}
+
+.product-dropdown {
+    display: block;
+    background-color: aqua;
+}
+
+.connect-dropdown {
+    display: block;
 }
 
 #header {
@@ -60,22 +74,12 @@ a {
     padding: 1rem 2rem;
 }
 
-.dropdown {
-    display: none;
-}
-
 .nav-items{ 
-    display: table;
-    margin: 0 auto;
-}
-
-ul#horizontal-list {
-    min-width: inherit;
-    list-style: none;
-}
-
-ul#horizontal-list li {
-    display: inline;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    width: inherit;
 }
 
 .attribution { font-size: 11px; text-align: center; }

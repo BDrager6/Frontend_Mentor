@@ -7,6 +7,7 @@
   <link rel="stylesheet" type="text/css" href="sytle.css"/>
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <title>Frontend Mentor | [Blogr]</title>
+    <script src="blogr.js"></script>
 </head>
     
 <body>
@@ -16,7 +17,29 @@
                 <div id="logo"></div>
                     <img src="./images/logo.svg"/>
                 <div id="nav-items">
-                    <ul id="horizontal-list">
+                    <table>
+                        <tr>
+                            <th><a id='nav-link-product' class="nav-link" href='#'>Product</a></th>
+                            <th><a id='nav-link-company' class="nav-link" href='#'>Company</a></th>
+                            <th><a id='nav-link-connect' class="nav-link" href='#'>Connect</a></th>
+                        </tr>
+                        <tr>
+                            <td class="product-dropdown"><a class='nav-link' href='#'>Bags</a></td>
+                            <td></td>
+                            <td class="connect-dropdown"><a class='nav-link' href='#'>Linkdin</a></td>
+                        </tr>
+                        <tr>
+                            <td class="product-dropdown"><a class='nav-link' href='#'>Swatchs</a></td>
+                            <td></td>
+                            <td class="connect-dropdown"><a class='nav-link' href='#'>Facebook</a></td>
+                        </tr>
+                        <tr>
+                            <td class="product-dropdown"><a class="nav-link" href='#'>Jewlery</a></td>
+                            <td></td>
+                            <td class="connect-dropdown"><a class="nav-link" href='#'>Twitter</a></td>
+                        </tr>
+                    </table>
+                    <!--ul id="horizontal-list">
                         <li><a href='#'>Product</a>
                             <ul class="dropdown">
                                 <li><a href='#'>Bags</a></li>
@@ -32,7 +55,7 @@
                                 <li><a href='#'>Twitter</a></li>
                             </ul>
                         </li>
-                    </ul>
+                    </ul-->
                 </div>
                 <div id="nav-actions"></div>
             </div>
