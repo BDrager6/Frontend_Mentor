@@ -17,47 +17,31 @@
                 <div id="logo"></div>
                     <img src="./images/logo.svg"/>
                 <div id="nav-items">
-                    <table>
-                        <tr>
-                            <th><a id='nav-link-product' class="nav-link" href='#'>Product</a></th>
-                            <th><a id='nav-link-company' class="nav-link" href='#'>Company</a></th>
-                            <th><a id='nav-link-connect' class="nav-link" href='#'>Connect</a></th>
-                        </tr>
-                        <tr>
-                            <td class="product-dropdown"><a class='nav-link' href='#'>Bags</a></td>
-                            <td></td>
-                            <td class="connect-dropdown"><a class='nav-link' href='#'>Linkdin</a></td>
-                        </tr>
-                        <tr>
-                            <td class="product-dropdown"><a class='nav-link' href='#'>Swatchs</a></td>
-                            <td></td>
-                            <td class="connect-dropdown"><a class='nav-link' href='#'>Facebook</a></td>
-                        </tr>
-                        <tr>
-                            <td class="product-dropdown"><a class="nav-link" href='#'>Jewlery</a></td>
-                            <td></td>
-                            <td class="connect-dropdown"><a class="nav-link" href='#'>Twitter</a></td>
-                        </tr>
-                    </table>
-                    <!--ul id="horizontal-list">
-                        <li><a href='#'>Product</a>
-                            <ul class="dropdown">
-                                <li><a href='#'>Bags</a></li>
-                                <li><a href='#'>Swatchs</a></li>
-                                <li><a href='#'>Jewlery</a></li>
-                            </ul>
-                        </li>
-                        <li><a href='#'>Company</a></li>
-                        <li><a href='#'>Connect</a>
-                            <ul class="dropdown">
-                                <li><a href='#'>Linkdin</a></li>
-                                <li><a href='#'>Facebook</a></li>
-                                <li><a href='#'>Twitter</a></li>
-                            </ul>
-                        </li>
-                    </ul-->
+                    <div id="product-dropdown">
+                        <span id="productbtn"><a class="nav-link" href="#">Product</a></span>
+                        <img id="product-arrow" src="./images/icon-arrow-light.svg"/>
+                        <div id="product-content">
+                            <a href="#">Bags</a>
+                            <a href="#">Swatchs</a>
+                            <a href="#">Jewlery</a>
+                        </div>
+                    </div>
+                    <span id="companybtn"><a class="nav-link" href="#">Company</a></span>
+                    <div id="connect-dropdown">
+                        <span id="connectbtn"><a class="nav-link" href="#">Connect</a></span>
+                        <img id="connect-arrow" src="./images/icon-arrow-light.svg"/>
+                        <div id="connect-content">
+                            <a href="#">Linkdin</a>
+                            <a href="#">Facebook</a>
+                            <a href="#">Twitter</a>
+                        </div>
+                    </div>
                 </div>
-                <div id="nav-actions"></div>
+                <div id="nav-actions">
+                    <div>
+                        <span id="login"><a class="nav-link" href='#'>Login</a></span>
+                    </div>
+                </div>
             </div>
         </nav>
     </div>

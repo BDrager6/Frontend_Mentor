@@ -27,30 +27,6 @@ body {
     margin: 0px;
 }
 
-ul {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-}
-
-a.nav-link {
-    text-decoration: none;
-    padding: 10px;
-}
-
-#nav-link-product:hover .product-dropdown{
-    display: none;
-}
-
-.product-dropdown {
-    display: block;
-    background-color: aqua;
-}
-
-.connect-dropdown {
-    display: block;
-}
 
 #header {
     min-height: 80vh;
@@ -80,6 +56,107 @@ a.nav-link {
     justify-content: center;
     align-content: center;
     width: inherit;
+}
+
+a.nav-link {
+    text-decoration: none;
+    color: white;
+}
+
+#product-dropdown {
+    position: relative;
+    display: inline-block;
+    padding: 15px;
+}
+
+#productbtn {
+    border: none;
+    font-family: "Overpass", sans-serif;
+    font-weight: bold;
+}
+
+#product-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    text-align: center;
+    padding: 5px;
+}
+
+#product-content a {
+    display: block;
+    color: rgb(31,31,31);
+    text-decoration: none;
+    padding: 7.5px;
+    font-family: "Overpass", sans-serif;
+    font-weight: bold;
+}
+
+#product-content a:hover {
+    text-decoration: underline;
+    text-decoration-color: var(--very-light-red);
+    color: var(--grayish-blue);
+}
+
+#product-dropdown:hover #product-content {display: block;}
+
+#product-dropdown:hover #product-arrow {transform: rotate(180deg); transition-duration: .25s;}
+
+#companybtn {
+    border: none;
+    font-family: "Overpass", sans-serif;
+    font-weight: bold;
+    padding: 15px;
+}
+
+#connect-dropdown {
+    position: relative;
+    display: inline-block;
+    padding: 15px;
+}
+
+#connectbtn {
+    border: none;
+    font-family: "Overpass", sans-serif;
+    font-weight: bold;
+}
+
+#connect-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    text-align: center;
+    padding: 5px;
+}
+
+#connect-content a {
+    display: block;
+    color: rgb(31,31,31);
+    text-decoration: none;
+    padding: 7.5px;
+    font-family: "Overpass", sans-serif;
+    font-weight: bold;
+}
+
+#connect-content a:hover {
+    text-decoration: underline;
+    text-decoration-color: var(--very-light-red);
+    color: var(--grayish-blue);
+}
+
+#connect-dropdown:hover #connect-content {display: block;}
+
+#connect-dropdown:hover #connect-arrow {transform: rotate(180deg); transition-duration: .25s;}
+
+#login {
+    font-family: "Overpass", sans-serif;
+    font-weight: bold;
+}
+
+#login a:hover {
+    color: var(--grayish-blue);
+    padding-bottom: 3px;
+    border-bottom: 1px solid var(--very-light-red);
 }
 
 .attribution { font-size: 11px; text-align: center; }
