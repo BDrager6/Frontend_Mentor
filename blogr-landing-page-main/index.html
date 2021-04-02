@@ -11,6 +11,7 @@
 </head>
     
 <body>
+    <!-- header -->
     <div id="header">
         <nav>
             <div id="nav-center">
@@ -19,7 +20,7 @@
                 <div id="nav-items">
                     <div id="product-dropdown">
                         <span id="productbtn"><a class="nav-link" href="#">Product</a></span>
-                        <img id="product-arrow" src="./images/icon-arrow-light.svg"/>
+                        <img class="arrow" src="./images/icon-arrow-light.svg"/>
                         <div id="product-content">
                             <a href="#">Bags</a>
                             <a href="#">Swatchs</a>
@@ -29,7 +30,7 @@
                     <span id="companybtn"><a class="nav-link" href="#">Company</a></span>
                     <div id="connect-dropdown">
                         <span id="connectbtn"><a class="nav-link" href="#">Connect</a></span>
-                        <img id="connect-arrow" src="./images/icon-arrow-light.svg"/>
+                        <img class="arrow" src="./images/icon-arrow-light.svg"/>
                         <div id="connect-content">
                             <a href="#">Linkdin</a>
                             <a href="#">Facebook</a>
@@ -40,21 +41,33 @@
                 <div id="nav-actions">
                     <div>
                         <span id="login"><a class="nav-link" href='#'>Login</a></span>
+                        <button id="signup">SignUp</button>
                     </div>
                 </div>
             </div>
         </nav>
+        <div id="header-text">
+            <h1 id="big-head">A modern publishing platform</h1>
+            <h3 id="little-head">Grow your audience and build your online plarform</h3>
+            <div>
+                <button class="head-button" id="head-button-left"><a href="#">Start for Free</a></button>
+                <button class="head-button" id="head-button-right"><a href="#">Learn More</a></button>
+            </div>
+        </div>
     </div>
-<!-- First Block
-  Login
-  Sign Up
-
-  A modern publishing platform
-  Grow your audience and build your online brand
-
-  Start for Free
-  Learn More
--->
+    <!-- main part -->
+    <div id="main">
+        <h2 id="main-head">Design For The Future</h2>
+        <div id="first-section-main">
+            <div id="first-section-text">
+                <h3 class="main-h">Introducing an extensible editor</h3>
+                <p class="main-t">Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content. The editor supports management of multiple blogs and allows easy manipulation of embeds such as images, videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or change the looks of a blog.</p>
+                <h3 class="main-h">Robust content managment</h3>
+                <p class="main-t">Flexible content management enables users to easily move through posts. Increase the usability of your blog by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.</p>
+            </div>
+            <img id="first-section-img" src="./images/illustration-editor-desktop.svg"/>
+        </div>
+    </div>
 <!-- Main Portion
   Designed for the future
 

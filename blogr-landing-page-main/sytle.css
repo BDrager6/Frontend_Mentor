@@ -27,6 +27,17 @@ body {
     margin: 0px;
 }
 
+h1 {
+    font-size: 2.5rem;
+}
+
+button {
+    border: none;
+}
+
+a {
+    text-decoration: none;
+}
 
 #header {
     min-height: 80vh;
@@ -90,12 +101,15 @@ a.nav-link {
     padding: 7.5px;
     font-family: "Overpass", sans-serif;
     font-weight: bold;
+    padding-bottom: 2px;
+    border-bottom: 3px solid white;
 }
 
 #product-content a:hover {
-    text-decoration: underline;
-    text-decoration-color: var(--very-light-red);
+    padding-bottom: 2px;
+    border-bottom: 3px solid var(--very-light-red);
     color: var(--grayish-blue);
+    cursor: pointer;
 }
 
 #product-dropdown:hover #product-content {display: block;}
@@ -136,27 +150,139 @@ a.nav-link {
     padding: 7.5px;
     font-family: "Overpass", sans-serif;
     font-weight: bold;
+    padding-bottom: 2px;
+    border-bottom: 3px solid white;
 }
 
 #connect-content a:hover {
-    text-decoration: underline;
-    text-decoration-color: var(--very-light-red);
+    padding-bottom: 2px;
+    border-bottom: 3px solid var(--very-light-red);
     color: var(--grayish-blue);
+    cursor: pointer;
 }
 
 #connect-dropdown:hover #connect-content {display: block;}
 
-#connect-dropdown:hover #connect-arrow {transform: rotate(180deg); transition-duration: .25s;}
+#product-dropdown:hover .arrow {transform: rotate(180deg); transition-duration: .25s;}
+#connect-dropdown:hover .arrow {transform: rotate(180deg); transition-duration: .25s;}
 
 #login {
     font-family: "Overpass", sans-serif;
     font-weight: bold;
+    padding-right: 50px;
 }
 
 #login a:hover {
     color: var(--grayish-blue);
-    padding-bottom: 3px;
-    border-bottom: 1px solid var(--very-light-red);
+    padding-bottom: 2px;
+    border-bottom: 3px solid var(--very-light-red);
+}
+
+#signup{
+    border: none;
+    background-color: white;
+    color: var(--light-red);
+    font-size: 1em;
+    height: 2.5em;
+    width: 5em;
+    border-radius: 35px 35px 35px 35px;
+}
+
+#signup button {
+    padding-left: 50px;
+}
+
+#signup:hover {
+    background-color: rgba(255, 255, 255, 0.842);
+    cursor: pointer;
+}
+
+#header-text {
+    color: var(--white);
+    text-align: center;
+    font-family: "Overpass", sans-serif;
+}
+
+#big-head {
+    padding-bottom: 0px;
+}
+
+#little-head {
+    font-weight: lighter;
+    padding-top: 0px;
+}
+
+.head-button {
+    height: 2.25em;
+    font-size: 1.25em;
+    border-radius: 35px 35px 35px 35px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+#head-button-right {
+    margin-left: 70px;
+    background-color: transparent;
+    color: var(--white);
+    border: 3px solid var(--white);
+}
+
+#head-button-right:hover {
+    background-color: var(--very-dark-desaturated-blue);
+    cursor: pointer;
+}
+
+#head-button-left {
+    margin-right: 70px;
+}
+
+#head-button-left a {
+    color: var(--light-red);
+}
+
+#head-button-left:hover {
+    background-color: rgba(255, 255, 255, 0.842);
+    cursor: pointer;
+}
+
+#head-button-right a {
+    color: var(--white);
+}
+
+#main-head {
+    text-align: center;
+    color: var(--grayish-blue);
+    font-family: "Overpass", sans-serif;
+}
+
+#first-section-main {
+    display: flex;
+}
+
+#first-section-text {
+    justify-content: flex-start;
+}
+
+#first-section-img {
+    justify-content: flex-end;
+    width: 500px;
+    height: auto;
+    overflow: hidden;
+}
+
+.main-t {
+    color: var(--very-dark-desaturated-blue);
+    font-family: "Ubuntu", sans-serif;
+    width: 30%;
+    margin-left: 40px;
+}
+
+.main-h {
+    margin-left: 40px;
+    font-family: "Overpass", sans-serif;
+    font-size: 1.5rem;
+    color: var(--grayish-blue);
+    width: 409px;
 }
 
 .attribution { font-size: 11px; text-align: center; }
