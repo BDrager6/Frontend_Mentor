@@ -59,6 +59,7 @@ a {
     width: 100%;
     margin: 0 auto;
     padding: 1rem 2rem;
+    position: sticky;
 }
 
 .nav-items{ 
@@ -264,14 +265,15 @@ a.nav-link {
     justify-content: flex-end;
     width: 40vw;
     height: auto;
-    right: -50px;
+    transform: translate(30%);
 }
 
 .main-t {
-    color: var(--very-dark-desaturated-blue);
+    color: hsl(237, 23%, 32%);
     font-family: "Ubuntu", sans-serif;
-    width: 30%;
+    width: 50%;
     margin-left: 4vw;
+    line-height: 1.5em;
 }
 
 .main-h {
@@ -279,6 +281,38 @@ a.nav-link {
     font-family: "Overpass", sans-serif;
     font-size: 1.5rem;
     color: var(--grayish-blue);
+}
+
+#second-section-main {
+    background-color: var(--very-dark-desaturated-blue);
+    height: 65vh;
+    width: 100%;
+    border-radius: 0 10em 0 10em;
+    display: flex;
+    transform: translate(0%, -5%);
+}
+
+#second-section-img {
+    max-height: 200%;
+    width: auto;
+    transform: translate(40%, 5%);
+}
+
+second-section-text {
+    justify-content: flex-end;
+}
+
+#second-section-p {
+    color: white;
+    width: 25%;
+    margin-left: 55%;
+}
+
+#second-section-head {
+    color: white;
+    font-size: 2em;
+    margin-left: 55%;
+    margin-top: 10%;
 }
 
 .attribution { font-size: 11px; text-align: center; }
