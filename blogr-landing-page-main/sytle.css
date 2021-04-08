@@ -25,6 +25,7 @@
 
 body {
     margin: 0px;
+    overflow-x: hidden;
 }
 
 h1 {
@@ -83,7 +84,7 @@ a.nav-link {
 
 #productbtn {
     border: none;
-    font-family: "Overpass", sans-serif;
+    font-family: "Ubuntu", sans-serif;
     font-weight: bold;
 }
 
@@ -270,7 +271,7 @@ a.nav-link {
 
 .main-t {
     color: hsl(237, 23%, 32%);
-    font-family: "Ubuntu", sans-serif;
+    font-family: "Overpass", sans-serif;
     width: 50%;
     margin-left: 4vw;
     line-height: 1.5em;
@@ -315,5 +316,101 @@ second-section-text {
     margin-top: 10%;
 }
 
-.attribution { font-size: 11px; text-align: center; }
+#third-section-main {
+    display: flex;
+}
+
+#third-section-img {
+    transform: translate(-29%, 0%);
+}
+
+#third-section-text {
+    justify-content: flex-end;
+    margin-top: 9%;
+}
+
+.third-section-head {
+    margin-left: 35%;
+}
+
+.third-section-text {
+    margin-left: 35%;
+}
+
+#footer {
+    display: flex;
+    background-color: black;
+    border: none;
+    border-radius: 0 10em 0 0;
+    height: 35vh;
+}
+
+#footer-logo {
+    max-height: 15%;
+    width: auto;
+    transform: translate(10vw, 8vh)
+}
+
+#product-footer {
+    color: white;
+    font-family: "Ubuntu", sans-serif;
+    transform: translate(25vw, 5vh)
+}
+
+#product-footer h6 {
+    text-align: center;
+}
+
+#product-footer h6:hover {
+    color: gray;
+    cursor: pointer;
+}
+
+#company-footer {
+    color: white;
+    font-family: "Ubuntu", sans-serif;
+    transform: translate(45vw, 5vh)
+}
+
+#company-footer h6 {
+    text-align: center;
+}
+
+#company-footer h6:hover {
+    color: gray;
+    cursor: pointer;
+}
+
+#connect-footer {
+    color: white;
+    font-family: "Ubuntu", sans-serif;
+    transform: translate(65vw, 5vh);
+}
+
+#connect-footer h6 {
+    text-align: center;
+}
+
+#connect-footer h6:hover {
+    color: gray;
+    cursor: pointer;
+}
+
+.footer-a {
+    color: white;
+}
+
+.footer-a:hover {
+    color: gray;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center;
+    color: white;
+    background-color: black;
+    height: 50px;
+    border: 1px solid black;
+}
+
 .attribution a { color: hsl(228, 45%, 44%); }
